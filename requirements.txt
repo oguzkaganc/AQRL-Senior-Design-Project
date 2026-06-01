@@ -1,0 +1,9 @@
+mujoco
+gymnasium
+numpy
+torch
+matplotlib
+stable-baselines3
+tensorboard
+smbus2
+adafruit-circuitpython-servokit

@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+
+# Training logs can be large and are not required for the appendix package.
+runs/**/logs/
+*.tfevents.*
+monitor.csv
+
+# Local environments and editor settings.
+.venv/
+venv/
+quadrl-venv/
+.idea/
+.vscode/

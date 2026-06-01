@@ -1,0 +1,46 @@
+{
+  "default": "v8_selected",
+  "policies": {
+    "v8_selected": {
+      "description": "Final IMU-compatible residual PPO policy selected for Raspberry Pi deployment.",
+      "model": "runs/aqrl_v8_selected/models/final.zip",
+      "exported_actor": "runs/exported/aqrl_v8_actor_cpu.ts",
+      "env": {
+        "control_dt": 0.04,
+        "base_step_length": 0.03,
+        "base_step_velocity": 0.30,
+        "base_clearance": 0.040,
+        "base_penetration": 0.003,
+        "target_forward_velocity": 0.10,
+        "target_yaw_rate": 0.0,
+        "yaw_residual_scale": 0.026
+      },
+      "deterministic_eval_1000_steps": {
+        "total_reward": 762.88,
+        "lateral_error_m": 0.079,
+        "yaw_error_rad": 0.011,
+        "decision": "selected_for_deployment"
+      }
+    },
+    "v9_candidate": {
+      "description": "Longer-trained IMU-compatible PPO candidate used for deterministic comparison.",
+      "model": "runs/aqrl_v9_candidate/models/final.zip",
+      "env": {
+        "control_dt": 0.04,
+        "base_step_length": 0.03,
+        "base_step_velocity": 0.30,
+        "base_clearance": 0.040,
+        "base_penetration": 0.003,
+        "target_forward_velocity": 0.10,
+        "target_yaw_rate": 0.0,
+        "yaw_residual_scale": 0.026
+      },
+      "deterministic_eval_1000_steps": {
+        "total_reward": 739.03,
+        "lateral_error_m": 0.159,
+        "yaw_error_rad": -0.007,
+        "decision": "kept_as_candidate"
+      }
+    }
+  }
+}
