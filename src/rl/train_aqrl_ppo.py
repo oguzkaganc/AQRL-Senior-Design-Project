@@ -47,7 +47,7 @@ def main():
     parser.add_argument("--lateral-velocity-weight", type=float, default=0.8)
     parser.add_argument("--height-target", type=float, default=0.19)
     parser.add_argument("--height-error-weight", type=float, default=2.0)
-    parser.add_argument("--yaw-residual-scale", type=float, default=0.020)
+    parser.add_argument("--yaw-residual-scale", type=float, default=0.026)
     parser.add_argument("--action-weight", type=float, default=0.08)
     parser.add_argument("--gait-action-weight", type=float, default=0.10)
     parser.add_argument("--yaw-action-weight", type=float, default=0.25)

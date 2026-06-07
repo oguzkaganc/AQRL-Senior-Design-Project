@@ -242,7 +242,7 @@ def read_imu_obs(
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--actor", default="runs/exported/aqrl_v8_actor_cpu.ts")
+    parser.add_argument("--actor", default="runs/exported/aqrl_v9_1850k_actor_cpu.ts")
     parser.add_argument("--runtime-seconds", type=float, default=3.0)
     parser.add_argument("--stand-seconds", type=float, default=1.5)
     parser.add_argument("--dt", type=float, default=0.04)

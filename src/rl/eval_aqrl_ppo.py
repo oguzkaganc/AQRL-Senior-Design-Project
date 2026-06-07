@@ -13,7 +13,7 @@ from src.envs.trot_imu_env import TrotImuEnv
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", default="runs/aqrl_v8_selected/models/final.zip")
+    parser.add_argument("--model", default="runs/aqrl_v9_1850k_selected/models/final.zip")
     parser.add_argument("--steps", type=int, default=2000)
     parser.add_argument("--deterministic", action="store_true")
     parser.add_argument("--no-render", action="store_true")
@@ -22,7 +22,7 @@ def main():
     parser.add_argument("--base-step-velocity", type=float, default=0.30)
     parser.add_argument("--base-clearance", type=float, default=0.040)
     parser.add_argument("--base-penetration", type=float, default=0.003)
-    parser.add_argument("--yaw-residual-scale", type=float, default=0.020)
+    parser.add_argument("--yaw-residual-scale", type=float, default=0.026)
     parser.add_argument("--target-forward-velocity", type=float, default=0.10)
     parser.add_argument("--target-yaw-rate", type=float, default=0.0)
     parser.add_argument("--random-forward-velocity-range", type=float, default=0.0)

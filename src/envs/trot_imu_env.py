@@ -58,7 +58,7 @@ class TrotImuEnv(gym.Env):
         lateral_velocity_weight=0.8,
         height_target=0.19,
         height_error_weight=2.0,
-        yaw_residual_scale=0.020,
+        yaw_residual_scale=0.026,
         action_weight=0.08,
         gait_action_weight=0.10,
         yaw_action_weight=0.25,

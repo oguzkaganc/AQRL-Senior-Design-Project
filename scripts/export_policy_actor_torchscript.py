@@ -47,12 +47,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--policy",
-        default="v8_selected",
+        default="v9_1850k_selected",
         help="Policy registry name or explicit .zip model path",
     )
     parser.add_argument(
         "--output",
-        default="runs/exported/aqrl_v8_actor_cpu.ts",
+        default="runs/exported/aqrl_v9_1850k_actor_cpu.ts",
         help="TorchScript output path",
     )
     args = parser.parse_args()
