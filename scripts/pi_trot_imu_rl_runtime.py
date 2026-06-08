@@ -243,7 +243,7 @@ def read_imu_obs(
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--actor", default="runs/exported/aqrl_v9_1850k_actor_cpu.ts")
-    parser.add_argument("--runtime-seconds", type=float, default=3.0)
+    parser.add_argument("--runtime-seconds", type=float, default=20.0)
     parser.add_argument("--stand-seconds", type=float, default=1.5)
     parser.add_argument("--dt", type=float, default=0.04)
     parser.add_argument("--base-step-length", type=float, default=0.030)
@@ -253,7 +253,7 @@ def main():
     parser.add_argument("--target-forward-velocity", type=float, default=0.10)
     parser.add_argument("--target-yaw-rate", type=float, default=0.0)
     parser.add_argument("--yaw-residual-scale", type=float, default=0.026)
-    parser.add_argument("--policy-scale", type=float, default=0.5)
+    parser.add_argument("--policy-scale", type=float, default=1.0)
     parser.add_argument(
         "--front-lift-boost",
         type=float,
